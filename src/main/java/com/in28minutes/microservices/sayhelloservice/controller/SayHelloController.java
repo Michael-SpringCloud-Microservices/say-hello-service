@@ -14,6 +14,6 @@ public class SayHelloController {
 
     @GetMapping("/")
     public String sayHelloToUser(){
-        return "Hi Michael from " + Integer.parseInt(environment.getProperty("local.server.port")) ;
+        return "Hi Michael from the instance running at " + Integer.parseInt(environment.getProperty("local.server.port")) ;
     }
 }
